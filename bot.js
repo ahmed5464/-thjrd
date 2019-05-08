@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 var prefix = "#"
-var adminprefix = '&'
+var adminprefix = '$'
 const developers = ["489700188202729472","id"]
 
 client.on('message', message => {
@@ -33,7 +33,7 @@ client.on('message', message => {
         message.channel.send(`${p} ${reason}`)
             message.delete();
         log.send({embed});
-        warnRoles = ['Only Me']
+        warnRoles = ['OWEND BY']
     }
 });
 ///////////
@@ -61,7 +61,7 @@ client.on('message', message => {
         p.ban();
             message.delete();
         log.send({embed});
-        banRoles = ['Only Me']
+        banRoles = ['OWEND BY']
     }
 });
 ///////////////////////////
@@ -212,7 +212,7 @@ var config = {
     {type: "CHANNEL_DELETE", logType: "CHANNEL_DELETE", limit: 4, delay: 5000},
     {type: "GUILD_MEMBER_REMOVE", logType: "MEMBER_KICK", limit: 4, delay: 5000},
     {type: "GUILD_BAN_ADD", logType: "MEMBER_BAN_ADD", limit: 4, delay: 5000},
-    {type: "GUILD_ROLE_CREATE", logType: "ROLE_CREATE", limit: 5, delay: 5000},
+    {type: "GUILD_ROLE_CREATE", logType: "ROLE_CREATE", limit: 4, delay: 5000},
     {type: "GUILD_ROLE_DELETE", logType: "ROLE_DELETE", limit: 4, delay: 5000},
   ]
 }
@@ -341,7 +341,7 @@ client.on('message', message => {
 });
 //////
 client.on("guildMemberAdd", member => {
-  client.channels.find('id', '563863609441124363').send(` **Welcome To __Te__st Server**  `)
+  client.channels.find('id', '571926567568015424').send(` **Welcome To __Te__st Server**  `)
 }); 
 /////////
-client.login('توكن');
+client.login('NTc1NTgzNjYwNzcwNzIxNzky.XNKEFQ.wfksXFbZj1AkFpbJcmLj3MmAN4s');
